@@ -1,0 +1,137 @@
+body {
+    background-image: url("6690817_2308 (1).jpg");
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    position: relative;
+    color: black;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 5px;
+}
+
+.topHead {
+    font-size: 30px;
+    position: center;
+    left: 30px;
+    bottom: 40px;
+    font-family: comic Sans MS;
+}
+
+.formBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 80px;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    border: 2px solid rgb(255, 253, 253);
+    padding: 20px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputText {
+    height: 30px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    padding: 0 0 0 10px;
+    opacity: 90%;
+    color: black;
+}
+
+::-webkit-input-placeholder {
+    color: rgb(49, 48, 48);
+}
+
+#submitButton {
+    height: 40px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: aliceblue;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#forgotPW {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 35px;
+    color: white;
+}
+
+#Register {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 35px;
+    color: black;
+}
+
+#Resetpassword {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 35px;
+    color: white;
+}
+
+#submitButton:hover {
+    background-color: #000060;
+}
+
+#submitButton:active {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.formBox {
+    animation: fade-in 1s ease;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 110px; /* Adjust the size as needed */
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+    .formBox {
+        width: 80%;
+        height: auto;
+    }
+}
+
